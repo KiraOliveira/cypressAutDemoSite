@@ -1,6 +1,7 @@
 /// <reference types="Cypress" />
 
 import loginElements from "../elements/loginElements";
+import login from "../../fixtures/login.json"
 
 class loginPage {
   
@@ -24,7 +25,8 @@ class loginPage {
     cy.get(loginElements.fieldName())
       .should('exist')  
       .and('be.visible')
-      .type('kira@email.com')
+      //.type('kira@email.com')
+      .type(login.email.emailSucess)
     
     // Validando título e campo Password  
     cy.get(loginElements.titleFieldPassword())
@@ -35,7 +37,8 @@ class loginPage {
     cy.get(loginElements.fieldPassword())
       .should('exist')
       .and('be.visible')  
-      .type('123456789')
+      //.type('123456789')
+      .type(login.senha.senhaSucess)
     
     // Validando Remember me
     cy.get(loginElements.labelRememberMe())

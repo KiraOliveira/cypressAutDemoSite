@@ -4,7 +4,7 @@ import homePage from "../support/pageObjects/homePage";
 import loginPage from "../support/pageObjects/loginPage";
 
 // Funcionalidade
-describe('Home', () => {
+describe('Realizando o Login', () => {
 
     // Acessando site
     it('Acessando Site', () => {
