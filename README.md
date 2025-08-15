@@ -1,6 +1,7 @@
 ## Praticando automação de Interface
 
-Repositório com a automação realizada
+Repositório com fluxo automatizado para Login e Regostro de novo usuário
+* Steps de Sucesso e Falha para ambas as rotas
 
 * Utilizando o framewrok [Cypress](https://www.cypress.io/).
 
