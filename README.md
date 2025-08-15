@@ -1,4 +1,4 @@
-## Praticando automação de Interface
+## Praticando automação de Interface com Cypress
 
 Repositório com fluxo automatizado para Login e Regostro de novo usuário
 * Steps de Sucesso e Falha para ambas as rotas
@@ -65,6 +65,7 @@ npx cypress open ou npx cypress run(heandless)
 ---
 
 ## Execução dos testes
+<img width="835" height="191" alt="resultados" src="https://github.com/user-attachments/assets/c665f7bc-ffe3-4821-b70b-77898a5295a6" />
 
 
 
