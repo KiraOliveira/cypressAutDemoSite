@@ -21,7 +21,7 @@ describe('Criando um novo registro', () => {
 
         registerPage.registerNewUserSucess();
     })
-    it.only('Não realizar o registro com E-mail inválido', () => {
+    it('Não realizar o registro com E-mail inválido', () => {
         cy.visit('/')
         homePage.acessAccount();
 

@@ -23,6 +23,9 @@ class loginPage {
     // Lost your password?
     linkLostPassword = () => {return '.woocommerce-LostPassword > a'}
 
+    // Valida se o e-mail foi registrado
+    alertMsgError = () => {return '.woocommerce-error'}
+    alertMsgErrorText = () => {return '.woocommerce-error > li'}    
 }
 
 export default new loginPage;

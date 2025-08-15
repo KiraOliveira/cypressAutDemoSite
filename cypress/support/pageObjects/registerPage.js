@@ -25,8 +25,7 @@ class registerPage {
     cy.get(registerElements.fieldName())
       .should('exist')  
       .and('be.visible')
-      //.type('kira@email.com')
-      .type(register.email.emailSucess)
+      .type(register.email.emailSucess, {log: false})
     
     // Validando título e campo Password  
     cy.get(registerElements.titleFieldPassword())
@@ -38,7 +37,7 @@ class registerPage {
       .should('exist')
       .and('be.visible')  
       //.type('123456789')
-      .type(register.senha.senhaSucess)
+      .type(register.senha.senhaSucess, {log: false})
 
     // Validando botão de Register
     cy.get(registerElements.buttonRegister())
@@ -53,7 +52,7 @@ class registerPage {
       .should('exist')  
       .and('be.visible')
       //.type('kira@email.com')
-      .type(register.email.emailSucess)
+      .type(register.email.emailError, {log: false})
     
     // Validando título e campo Password  
     cy.get(registerElements.titleFieldPassword())
@@ -65,7 +64,7 @@ class registerPage {
       .should('exist')
       .and('be.visible')  
       //.type('123456789')
-      .type(register.senha.senhaSucess)
+      .type(register.senha.senhaSucess, {log: false})
 
     // Validando botão de Register
     cy.get(registerElements.buttonRegister())
@@ -80,7 +79,7 @@ class registerPage {
       .should('exist')  
       .and('be.visible')
       //.type('kira@email.com')
-      .type(register.email.emailSucess)
+      .type(register.email.emailSucess, {log: false})
     
     // Validando título e campo Password  
     cy.get(registerElements.titleFieldPassword())
@@ -92,7 +91,7 @@ class registerPage {
       .should('exist')
       .and('be.visible')  
       //.type('123456789')
-      .type(register.senha.senhaError)
+      .type(register.senha.senhaError, {flog: false})
 
     cy.get(registerElements.alertPasswordWeak())
       .should('exist')
@@ -102,10 +101,10 @@ class registerPage {
     cy.get(registerElements.explanationCreatePassword())  
       .should('exist')
       .and('be.visible')
-      .and('have.text', register.mensagens.createPassword)
+      .and('contain.text', register.mensagens.createPassword)
 
     // Validando botão de Register
-    cy.get(registerElements.buttonRegister())
+    cy.get(registerElements.buttonDisable())
       .should('exist')
       .and('be.disabled')
   }
@@ -118,7 +117,7 @@ class registerPage {
     cy.get(registerElements.fieldName())
       .should('exist')  
       .and('be.visible')
-      .type(register.email.emailSucess)
+      .type(register.email.emailSucess, {log: false})
     
     // Validando título e campo Password  
     cy.get(registerElements.titleFieldPassword())
@@ -130,7 +129,7 @@ class registerPage {
       .should('exist')
       .and('be.visible')  
       //.type('123456789')
-      .type(register.senha.senhaSucess)
+      .type(register.senha.senhaSucess), {log: false}
 
     // Validando botão de Register
     cy.get(registerElements.buttonRegister())

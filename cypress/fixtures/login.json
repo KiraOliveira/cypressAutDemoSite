@@ -4,11 +4,13 @@
         "emailError": "teste.com.br"
     },
     "senha": {
-        "senhaSucess": "123456",
+        "senhaSucess": "Ki123456",
         "senhaError": "1A25"
     },
     "mensagens": {
-        "emailInvalidoVazio": "E-mail inválido.",
-        "senhaInvalidaVazia": "Senha inválida."
+        "emailInvalidoVazio": "Error: Username is required.",
+        "senhaInvalidaVazia": "Error: Password is required.",
+        "emailNaoRegistrado": "Error: The username teste.com.br is not registered on this site. If you are unsure of your username, try your email address instead.",
+        "passwordWrong": "Error: The password you entered for the username teste@teste.com is incorrect. Lost your password?"
     }
   }

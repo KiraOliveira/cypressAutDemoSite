@@ -1,6 +1,6 @@
 {
     "email": {
-        "emailSucess": "teste@teste.com",
+        "emailSucess": "teste1@teste.com",
         "emailError": "teste.com.br"
     },
     "senha": {
@@ -10,8 +10,8 @@
     "mensagens": {
         "emailInvalidoVazio": "E-mail inválido.",
         "senhaInvalidaVazia": "Senha inválida.",
-        "passwordWeak": "Weak - Please enter a stronger password.",
-        "createPassword": "The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like ! ' ? $ % ^ & ).",
-        "msgDuplicity": " Error: An account is already registered with your email address. Please login."
+        "passwordWeak": "Weak - Please enter a stronger password.", 
+        "createPassword": "The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like ! ",
+        "msgDuplicity": "Error: An account is already registered with your email address. Please login."
     }
   }

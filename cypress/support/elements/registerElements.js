@@ -13,14 +13,17 @@ class elementsPage {
     titleFieldPassword = () => {return '.register > :nth-child(2) > label'}
     fieldPassword = () => {return '#reg_password'}
 
-    // Botão Register
+    // Button Register
     buttonRegister = () => {return 'input[type="submit"][class="woocommerce-Button button"][name="register"]'}
+
+    // Button Register Disable
+    buttonDisable = () => {return '.woocomerce-FormRow > .woocommerce-Button'}
 
     // Para usar nos steps negativos
     alertPasswordWeak = () => {return '.woocommerce-password-strength'} // Very weak - Please enter a stronger password.
     explanationCreatePassword = () => { return'.woocommerce-password-hint'} // The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like ! " ? $ % ^ & ).
 
-    // Duplicidade
+    // Duplicity
     alertAlreadyRegistered = () => {return '.woocommerce-error'}
     textAlreadyRegistered = () => {return '.woocommerce-error > li'}  // Error: An account is already registered with your email address. Please login.
 

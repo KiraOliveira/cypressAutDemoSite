@@ -15,10 +15,37 @@ describe('Realizando o Login', () => {
         homePage.acessAccount();
     })
 
-    it.only('Realizando Login', () => {
+    it('Realizando Login com sucesso', () => {
         cy.visit('/')
         homePage.acessAccount();
 
-        loginPage.acessLogin();
+        loginPage.acessLoginSucess();
     })
+    it('Não realizar Login com E-mail ou Username inválido ou não registrado', () => {
+        cy.visit('/')
+        homePage.acessAccount();
+
+        loginPage.acessLoginEmailError();
+    })
+    it('Não realizar Login com Senha inválida', () => {
+        cy.visit('/')
+        homePage.acessAccount();
+
+        loginPage.acessLoginPasswordlWrong();
+    })
+
+    it('Não realizar Login com o campo E-mail vazio', () => {
+        cy.visit('/')
+        homePage.acessAccount();
+
+        loginPage.acessLoginEmailEmpty();
+    })
+
+    it('Não realizar Login com campo Password vazio', () => {
+        cy.visit('/')
+        homePage.acessAccount();
+
+        loginPage.acessLoginPasswordEmpty();
+    })
+    
 })
